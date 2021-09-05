@@ -30,7 +30,7 @@ const GithubProvider = (props) => {
 
   const getUser = async (username) => {
     setIsloading();
-    //?client_id=jukkanokelainen&client_secret=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`;//HUOM tässä bäck ticksit jotta toi username menee tuonne nätisti
+    
     const res = await axios.get(
       `https://api.github.com/users/${username}`);
     //setUser(res.data);
